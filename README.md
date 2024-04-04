@@ -20,10 +20,11 @@ These instructions will get you a copy of the project up and running on your loc
 ### Usage
 The calculator service exposes four endpoints, each corresponding to a basic arithmetic operation:
 
-Addition: /add?n1=<number>&n2=<number>
-Subtraction: /subtract?n1=<number>&n2=<number>
-Multiplication: /multiply?n1=<number>&n2=<number>
-Division: /divide?n1=<number>&n2=<number>
+- Addition: /add?n1=<number>&n2=<number>
+- Subtraction: /subtract?n1=<number>&n2=<number>
+- Multiplication: /multiply?n1=<number>&n2=<number>
+- Division: /divide?n1=<number>&n2=<number>
+
 Replace <number> with the numbers you want to operate on.
 
 ### Logging
