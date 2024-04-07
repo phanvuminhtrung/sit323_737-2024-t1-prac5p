@@ -5,3 +5,6 @@
 {"level":"error","message":"Invalid parameters for addition: n1=NaN, n2=NaN","service":"calculate-service"}
 {"level":"error","message":"Invalid parameters for addition: n1=NaN, n2=2","service":"calculate-service"}
 {"level":"error","message":"Invalid parameters for subtraction: n1=NaN, n2=2","service":"calculate-service"}
+{"level":"error","message":"Invalid parameters for square root: n1=5, n2=NaN","service":"calculate-service"}
+{"level":"error","message":"Invalid parameters for square root: n1=4, n2=NaN","service":"calculate-service"}
+{"level":"error","message":"Invalid parameters for square root: n1=4, n2=NaN","service":"calculate-service"}

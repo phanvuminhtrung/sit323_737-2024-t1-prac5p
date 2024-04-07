@@ -3,7 +3,7 @@
 - This is repo is for task 4.1P - SIT323 - 2024.
 
 ## AUTHOR
-SIT323 – TASK4.1P
+SIT323 – TASK4.1P, TASK4.1C
 VU MINH TRUNG PHAN – 221438973
 
 ## GETTING STARTED
@@ -20,12 +20,15 @@ These instructions will get you a copy of the project up and running on your loc
 ### Usage
 The calculator service exposes four endpoints, each corresponding to a basic arithmetic operation:
 
-- Addition: /add?n1=<number>&n2=<number>
-- Subtraction: /subtract?n1=<number>&n2=<number>
-- Multiplication: /multiply?n1=<number>&n2=<number>
-- Division: /divide?n1=<number>&n2=<number>
+- Addition: /add?n1=number&n2=number
+- Subtraction: /subtract?n1=number&n2=number
+- Multiplication: /multiply?n1=number&n2=number
+- Division: /divide?n1=number&n2=number
+- Exponentiation: /pow?n1=number&n2=number
+- Square Root: /sqrt?n1=number
+- Modulo: /mod?n1=number&n2=number
 
-Replace <number> with the numbers you want to operate on.
+Replace "number" with the numbers you want to operate on.
 
 ### Logging
 The service uses Winston for logging. All logs are formatted in JSON and stored in combined.log. Errors are also logged separately in error.log.

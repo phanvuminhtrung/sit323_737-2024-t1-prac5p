@@ -59,15 +59,33 @@ app.get("/divide", (req, res) => {
     handleRequest(req, res, divide, 'division');
 });
 
-// Define the function to handle requests
+// Define the endpoint for exponentiation
+app.get("/pow", (req, res) => {
+    // Handle the request by performing the exponentiation operation
+    handleRequest(req, res, Math.pow, 'exponentiation');
+});
+
+// Define the endpoint for square root
+app.get("/sqrt", (req, res) => {
+    // Handle the request by performing the square root operation
+    handleRequest(req, res, Math.sqrt, 'square root');
+});
+
+// Define the endpoint for modulo
+app.get("/mod", (req, res) => {
+    // Handle the request by performing the modulo operation
+    handleRequest(req, res, (n1, n2) => n1 % n2, 'modulo');
+});
+
+// Define handle request function
 function handleRequest(req, res, operation, operationName) {
-    // Try to perform the operation
     try {
         // Parse the input parameters
         const n1 = parseFloat(req.query.n1);
         const n2 = parseFloat(req.query.n2);
-        // If the input parameters are not valid numbers, return an error
-        if (isNaN(n1) || isNaN(n2)) {
+
+        // Validate input parameters. We ignore the case of square root operation as it only requires one parameter
+        if (isNaN(n1) || (operationName !== 'square root' && isNaN(n2))) {
             logger.error(`Invalid parameters for ${operationName}: n1=${n1}, n2=${n2}`);
             res.status(400).json({ statuscode: 400, msg: 'Invalid parameters' });
             return;
@@ -86,9 +104,8 @@ function handleRequest(req, res, operation, operationName) {
     }
 }
 
-// Define the port to listen on
+// Start the Express application
 const port = 3040;
-// Start the application
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
 });
