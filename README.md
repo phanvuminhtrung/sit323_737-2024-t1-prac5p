@@ -38,3 +38,9 @@ To start the service, run:
 - node calculatorwithlogger.js
 - enter example url to your browser (http://localhost:3040/subtract?n1=1&n2=2)
 
+### Docker
+- Create Dockerfile, build docker images
+![alt text](image.png)
+- Create Docker Compose, start env
+- Test the application.
+![alt text](image-1.png)
