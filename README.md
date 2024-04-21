@@ -44,3 +44,5 @@ To start the service, run:
 - Create Docker Compose, start env
 - Test the application.
 ![alt text](image-1.png)
+- Example ping from test app
+![alt text](image-2.png)
